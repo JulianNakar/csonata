@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Burger App</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center" id="top-bar">
+          <h1>Welcome to Good-Burger, Home of the Good-Burger</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center enter_section">
+          <p>Type in your order below.</p>
+
+          <form class="add-burger">
+            <input
+              type="text"
+              class="form-control"
+              name="burger_name"
+              value=""
+              id="burger_name"
+            />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="text-enter-button"
+            >
+              Make that Burger!
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center enter_section">
+          <p>Devour that by clicking the button!</p>
+          <p>Throw the wrapper out by deleting!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" class="task" id="not_devoured"></div>
+        <div class="col-md-6" class="task" id="devoured"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/burgers.js"></script>
+  </body>
+</html>
